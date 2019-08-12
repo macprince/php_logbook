@@ -62,6 +62,7 @@
 			<?php
 			if($num > 1){
 				echo " | <a href='erase.php'>Clear List</a>";
+				echo " | <a href='csv.php'>Download</a>";
 				echo " | <a href='print.php'>Print This Page</a>";
 			}
 			?>
