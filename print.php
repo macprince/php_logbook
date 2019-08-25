@@ -5,7 +5,7 @@
 	<?php
 		date_default_timezone_set("America/Chicago");
 		$today = date("F d, Y");
-	?>	
+	?>
 	<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Member Roster for <?php echo $today?></title>
@@ -21,10 +21,9 @@
 	<body onload="window.print()">
 		<div id="header">
 		<strong>
-			Macadamia MUG<br />
-			Main Meeting
+			Signed In Members
 		</strong><br />
-		<?php 
+		<?php
 		echo "<em>$today</em>
 		</div>";
 			$filename = "members.txt";

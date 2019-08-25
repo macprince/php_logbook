@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Macadamia MUG - Web Sign In</title>
+	<title>Web Sign In</title>
 <style type="text/css">
 		label{font-size:4em;}
 		button{font-size:3em;}
