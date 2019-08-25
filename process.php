@@ -22,16 +22,13 @@
 		}
 		if($errstring !== "")
 		{
-			echo "<META HTTP-EQUIV='refresh' content='0;URL=index.php?".$errstring."'>";	
+			echo "<META HTTP-EQUIV='refresh' content='0;URL=index.php?".$errstring."'>";
 		}
 		else{
 			$firstname = ucfirst(strtolower(trim(str_replace(",","",$_POST["firstname"]))));
 			$lastname = ucfirst(strtolower(trim(str_replace(",","",$_POST["lastname"]))));
 			$email = strtolower(trim(str_replace(",","",$_POST["email"])));
-  
-			$patterns = array("/(?<=-)([a-z])/e","/(?<=Mac)([a-z])/e","/(?<=Mc)([a-z])/e","/(?<=O')([a-z])/e",);
-			$lastname = preg_replace($patterns,"strtoupper('$0')",$lastname);
-			
+
 			$data = "$firstname,$lastname,$email\n";
 
 			$filename = 'members.txt';
@@ -45,12 +42,11 @@
 					exit;
 				}
 				fclose($handle);
-			
 				echo "<div>Hello, $firstname, and thank you for signing in!<p>Now sending you back to the login page.</div>";
 				echo "<META HTTP-EQUIV='refresh' content='3;URL=index.php'>";
 
 			} else {
-				echo "<div class='err'>Error: The file $filename is not writable.</div>";   
+				echo "<div class='err'>Error: The file $filename is not writable.</div>";
 			}
 		}
 		?>
